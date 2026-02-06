@@ -113,7 +113,23 @@ const canonicalURL = "https://brentcassity.com";
         <a href="#speaking-experience" class="hover:text-orange-400 transition-colors">SPEAKING</a>
         <a href="#footer" class="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded transition-colors">GET IN TOUCH</a>
       </div>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-white">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black/95 backdrop-blur-md">
+      <div class="container mx-auto px-6 py-4 flex flex-col gap-4 text-sm font-bold">
+        <a href="#meet-brent-cassity" class="hover:text-orange-400 transition-colors">BRENT</a>
+        <a href="#read-the-book" class="hover:text-orange-400 transition-colors">BOOK</a>
+        <a href="#hear-the-stories" class="hover:text-orange-400 transition-colors">PODCAST</a>
+        <a href="#speaking-experience" class="hover:text-orange-400 transition-colors">SPEAKING</a>
+        <a href="#footer" class="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded transition-colors text-center">GET IN TOUCH</a>
+      </div>
+    </div>
   </header>
 
   <!-- Hero Section -->
@@ -202,9 +218,9 @@ const canonicalURL = "https://brentcassity.com";
       <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">Meet Brent</h2>
 
       <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-[2fr,1fr] gap-12 items-start">
-          <!-- Text Content -->
-          <div class="space-y-6 text-white/90 leading-relaxed">
+        <div class="flex flex-col md:flex-row gap-12 items-start">
+          <!-- Text Content (2/3) -->
+          <div class="md:w-2/3 space-y-6 text-white/90 leading-relaxed">
             <p>At 15 years old, Brent was visiting his dad at Marion prison. When he was leaving the visit, he told himself, "No matter what happens in my life, I will never end up in a place like this." Thirty-two years later, Brent found himself standing at the gates of Leavenworth to serve a five-year federal sentence. <em>What happened?</em></p>
 
             <p>Brent became the CEO of the family's national company that was in the funeral, cemetery, and insurance business, Forever Enterprises. He along with his dad and brother were seen as innovators in their industry. Brent grew the funeral company from 3 states to operating over 20 states. The company was chronicled in the Wall Street Journal, TIME magazine, Entertainment Tonight to name a few. HBO even produced a documentary titled, "The Young and the Dead." Eventually, the company was brought down when Brent, his dad, and four others pled guilty to wire fraud, money laundering, and mail fraud. Brent had an additional charge of allowing an ex-felon to work in the business of insurance. Brent often speaks how risk and success can cause blind spots when growing a company.</p>
@@ -212,9 +228,9 @@ const canonicalURL = "https://brentcassity.com";
             <p>Once Brent returned home from prison, he authored the Amazon Best Selling book <em>Nightmare Success: Loyalty, Betrayal, Life Behind Bars, Adapting, And Finally Breaking Free: A Memoir.</em> He is the host of the popular podcast <em>Nightmare Success In and Out.</em> He has coined the phrase "Nightmare Success" because everything you want is on the other side of the unknowns and your fears. Brent is an engaging storyteller that has a real-life transformational story. Everyone has built up prisons in their own mind. Brent loves speaking to audiences about the 5 tools he used to survive his nightmare. These tools are excellent to use for your life and business!</p>
           </div>
 
-          <!-- Headshot -->
-          <div class="order-first md:order-last">
-            <img src="/images/brent-bio.jpg" alt="Brent Cassity" class="rounded-lg shadow-2xl w-full">
+          <!-- Headshot (1/3) -->
+          <div class="md:w-1/3">
+            <img src="/images/brent-headshot.jpg" alt="Brent Cassity" class="rounded-lg shadow-2xl w-full">
           </div>
         </div>
       </div>
@@ -222,62 +238,62 @@ const canonicalURL = "https://brentcassity.com";
   </section>
 
   <!-- Podcast Section -->
-  <section id="hear-the-stories" class="py-24 bg-black/20">
+  <section id="hear-the-stories" class="py-20">
     <div class="container mx-auto px-6">
-      <div class="text-center mb-4">
-        <p class="text-orange-400 text-sm font-medium tracking-wider mb-4">HEAR THE STORIES</p>
-        <h2 class="text-4xl md:text-5xl font-bold mb-6">Nightmare Success:<br>The Podcast</h2>
+      <div class="text-center mb-8">
+        <p class="text-orange-400 text-sm font-medium tracking-wider mb-2">HEAR THE STORIES</p>
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Nightmare Success: The Podcast</h2>
       </div>
 
-      <div class="max-w-3xl mx-auto">
-        <p class="text-lg text-white/90 leading-relaxed mb-8 text-center">
-          The Nightmare Success In and Out is a podcast about hope. What happens when your worst fear becomes your reality? How do you adapt, survive, and set yourself free? Host, Brent Cassity, was a CEO of a National Company. He received a five-year federal sentence to Leavenworth prison. He interviews justice impacted people who have made inspiring comebacks with their second chance in life. Listeners can take away nuggets of wisdom from each episode to knock down prisons they have built up in their own mind to take a step forward into their unknowns and fears to create their own Nightmare Success.
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <p class="text-white/90 mb-6">
+          Stories of justice-impacted people who overcame incarceration and adversity. Hosted by Brent Cassity, who served 5 years at Leavenworth and interviews others who've been through the system and come out the other side.
         </p>
 
-        <p class="text-center mb-12">
-          Read more about the podcast and our interviews at <a href="https://nightmaresuccess.com" class="text-orange-400 hover:text-orange-300 font-medium" target="_blank" rel="noopener">NightmareSuccess.com</a>
-        </p>
-
-        <!-- Podcast Platforms -->
-        <div class="flex items-center justify-center gap-6 mb-16">
+        <div class="flex items-center justify-center gap-6 mb-8">
           <a href="https://open.spotify.com/show/1B7Vox54D6B3Tb6UdaiqkR" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
-            <img src="/images/platforms/spotify.png" alt="Listen on Spotify" class="h-12">
+            <img src="/images/platforms/spotify.png" alt="Listen on Spotify" class="h-10">
           </a>
           <a href="https://podcasts.apple.com/us/podcast/nightmare-success-in-and-out/id1588287560" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
-            <img src="/images/platforms/apple-podcasts.png" alt="Listen on Apple Podcasts" class="h-12">
+            <img src="/images/platforms/apple-podcasts.png" alt="Listen on Apple Podcasts" class="h-10">
+          </a>
+          <a href="https://nightmaresuccess.com" class="text-orange-400 hover:text-orange-300 font-medium" target="_blank" rel="noopener">View All Episodes →</a>
+        </div>
+      </div>
+
+      <!-- Featured Episodes 3x3 Grid -->
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-xl font-bold mb-6 text-center">FEATURED EPISODES</h3>
+        <div class="grid grid-cols-3 gap-4">
+          <a href="https://nightmaresuccess.com/p/sentenced-at-16-free-at-last-cheryl-armstrong-on-26-years-in-prison-planting-pur/" target="_blank" rel="noopener" class="hover:scale-105 transition-transform">
+            <img src="/images/podcast-episodes/ep-01.jpg" alt="Cheryl Armstrong Episode" class="rounded-lg w-full">
+          </a>
+          <a href="https://nightmaresuccess.com/p/the-power-of-one-decision-from-prison-to-paychex-allyssa-bakers-comeback-story/" target="_blank" rel="noopener" class="hover:scale-105 transition-transform">
+            <img src="/images/podcast-episodes/ep-02.jpg" alt="Allyssa Baker Episode" class="rounded-lg w-full">
+          </a>
+          <a href="https://nightmaresuccess.com/p/wired-on-wall-street-tom-hardin-tipper-x-on-wearing-a-wire-and-surviving-the-sting/" target="_blank" rel="noopener" class="hover:scale-105 transition-transform">
+            <img src="/images/podcast-episodes/ep-03.jpg" alt="Tom Hardin Episode" class="rounded-lg w-full">
+          </a>
+          <a href="https://nightmaresuccess.com/p/from-film-sets-to-federal-charges-john-santilli-surviving-the-system/" target="_blank" rel="noopener" class="hover:scale-105 transition-transform">
+            <img src="/images/podcast-episodes/ep-04.jpg" alt="John Santilli Episode" class="rounded-lg w-full">
+          </a>
+          <a href="https://nightmaresuccess.com/p/duke-got-life-boxer-charles-duke-tanners-journey-from-two-life-sentences-to-freedom/" target="_blank" rel="noopener" class="hover:scale-105 transition-transform">
+            <img src="/images/podcast-episodes/ep-05.jpg" alt="Duke Tanner Episode" class="rounded-lg w-full">
+          </a>
+          <a href="https://nightmaresuccess.com/p/from-life-sentence-to-leader-yusef-wileys-100-turnaround/" target="_blank" rel="noopener" class="hover:scale-105 transition-transform">
+            <img src="/images/podcast-episodes/ep-06.jpg" alt="Yusef Wiley Episode" class="rounded-lg w-full">
+          </a>
+          <a href="https://nightmaresuccess.com/p/from-prison-to-popcorn-emily-obriens-comeback-snacks-story/" target="_blank" rel="noopener" class="hover:scale-105 transition-transform">
+            <img src="/images/podcast-episodes/ep-07.jpg" alt="Emily O'Brien Episode" class="rounded-lg w-full">
+          </a>
+          <a href="https://nightmaresuccess.com/p/zero-excuses-kristin-klines-convicted-comeback/" target="_blank" rel="noopener" class="hover:scale-105 transition-transform">
+            <img src="/images/podcast-episodes/ep-08.jpg" alt="Kristin Kline Episode" class="rounded-lg w-full">
+          </a>
+          <a href="https://nightmaresuccess.com/p/wrongfully-convicted-at-17-to-innocence-pardon-dieter-tejadas-comeback-nightmare/" target="_blank" rel="noopener" class="hover:scale-105 transition-transform">
+            <img src="/images/podcast-episodes/ep-09.jpg" alt="Dieter Tejada Episode" class="rounded-lg w-full">
           </a>
         </div>
-
-        <!-- Featured Episodes -->
-        <div class="mb-8">
-          <h3 class="text-2xl font-bold mb-8 text-center">FEATURED EPISODES</h3>
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <a href="https://nightmaresuccess.com/p/sentenced-at-16-free-at-last-cheryl-armstrong-on-26-years-in-prison-planting-pur/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
-              <img src="/images/podcast-episodes/ep-01.jpg" alt="Cheryl Armstrong Episode" class="rounded-lg">
-            </a>
-            <a href="https://nightmaresuccess.com/p/the-power-of-one-decision-from-prison-to-paychex-allyssa-bakers-comeback-story/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
-              <img src="/images/podcast-episodes/ep-02.jpg" alt="Allyssa Baker Episode" class="rounded-lg">
-            </a>
-            <a href="https://nightmaresuccess.com/p/wired-on-wall-street-tom-hardin-tipper-x-on-wearing-a-wire-and-surviving-the-sting/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
-              <img src="/images/podcast-episodes/ep-03.jpg" alt="Tom Hardin Episode" class="rounded-lg">
-            </a>
-            <a href="https://nightmaresuccess.com/p/from-film-sets-to-federal-charges-john-santilli-surviving-the-system/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
-              <img src="/images/podcast-episodes/ep-04.jpg" alt="John Santilli Episode" class="rounded-lg">
-            </a>
-            <a href="https://nightmaresuccess.com/p/duke-got-life-boxer-charles-duke-tanners-journey-from-two-life-sentences-to-freedom/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
-              <img src="/images/podcast-episodes/ep-05.jpg" alt="Duke Tanner Episode" class="rounded-lg">
-            </a>
-            <a href="https://nightmaresuccess.com/p/from-life-sentence-to-leader-yusef-wileys-100-turnaround/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
-              <img src="/images/podcast-episodes/ep-06.jpg" alt="Yusef Wiley Episode" class="rounded-lg">
-            </a>
-            <a href="https://nightmaresuccess.com/p/from-prison-to-popcorn-emily-obriens-comeback-snacks-story/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
-              <img src="/images/podcast-episodes/ep-07.jpg" alt="Emily O'Brien Episode" class="rounded-lg">
-            </a>
-            <a href="https://nightmaresuccess.com/p/zero-excuses-kristin-klines-convicted-comeback/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
-              <img src="/images/podcast-episodes/ep-08.jpg" alt="Kristin Kline Episode" class="rounded-lg">
-            </a>
-          </div>
-        </div>
+      </div>
 
         <!-- Testimonials -->
         <div class="space-y-8 mt-16">
@@ -468,8 +484,9 @@ const canonicalURL = "https://brentcassity.com";
     </div>
   </footer>
 
-  <!-- Smooth Scroll Script -->
+  <!-- Scripts -->
   <script>
+    // Smooth Scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -477,7 +494,14 @@ const canonicalURL = "https://brentcassity.com";
         if (target) {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+        // Close mobile menu if open
+        document.getElementById('mobile-menu').classList.add('hidden');
       });
+    });
+
+    // Mobile Menu Toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
     });
   </script>
 </body>
