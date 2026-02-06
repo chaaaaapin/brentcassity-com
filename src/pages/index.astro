@@ -1,0 +1,435 @@
+---
+import '../styles/global.css';
+
+const title = "Brent Cassity - Author, Podcast Host, Speaker";
+const description = "Brent Cassity helps people break down the prisons in their own mind through his speaking series, book Nightmare Success, and podcast featuring stories of redemption and second chances.";
+const canonicalURL = "https://brentcassity.com";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonicalURL}>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content={canonicalURL}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={`${canonicalURL}/images/hero.jpg`}>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={`${canonicalURL}/images/hero.jpg`}>
+
+  <!-- Schema.org Person Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Brent Cassity",
+    "url": "https://brentcassity.com",
+    "sameAs": [
+      "https://www.facebook.com/brentcassitynightmaresuccess/",
+      "https://www.youtube.com/channel/UCzpkqjjj53df9zlWAGba01g",
+      "https://www.linkedin.com/in/brent-cassity-8b66341a8/",
+      "https://www.instagram.com/brentcassity/",
+      "https://www.tiktok.com/@brentcassity",
+      "https://brentcassity.medium.com/"
+    ],
+    "jobTitle": "Author, Podcast Host, Speaker",
+    "description": "Author of Nightmare Success, host of the Nightmare Success podcast, and motivational speaker helping people break down mental prisons",
+    "knowsAbout": ["Leadership", "Resilience", "Criminal Justice Reform", "Second Chances", "Business Strategy"],
+    "alumniOf": "Forever Enterprises",
+    "award": "Amazon Best Selling Author"
+  }
+  </script>
+
+  <!-- Schema.org Book Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Nightmare Success: Loyalty, Betrayal, Life Behind Bars, Adapting, And Finally Breaking Free",
+    "author": {
+      "@type": "Person",
+      "name": "Brent Cassity"
+    },
+    "isbn": "1951943961",
+    "bookFormat": "https://schema.org/Paperback",
+    "inLanguage": "en",
+    "numberOfPages": "284",
+    "url": "https://amzn.to/3WC9gg3",
+    "genre": "Memoir",
+    "description": "A transformational story about surviving federal prison and breaking down the mental prisons we all create. Everything you want is on the other side of fear.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "156"
+    }
+  }
+  </script>
+
+  <!-- Schema.org PodcastSeries Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    "name": "Nightmare Success In and Out",
+    "url": "https://nightmaresuccess.com",
+    "description": "Stories of justice-impacted people who have made inspiring comebacks with their second chance in life",
+    "webFeed": "https://anchor.fm/s/72e7d4b4/podcast/rss",
+    "author": {
+      "@type": "Person",
+      "name": "Brent Cassity"
+    }
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+
+<body class="bg-[#3A1A5C] text-white font-sans antialiased">
+
+  <!-- Header Navigation -->
+  <header class="fixed top-0 w-full z-50 bg-[#3A1A5C]/95 backdrop-blur-sm">
+    <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center">
+        <img src="/images/logo.png" alt="Brent Cassity" class="h-12">
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#meet-brent-cassity" class="hover:text-orange-400 transition-colors">BRENT</a>
+        <a href="#read-the-book" class="hover:text-orange-400 transition-colors">BOOK</a>
+        <a href="#hear-the-stories" class="hover:text-orange-400 transition-colors">PODCAST</a>
+        <a href="#speaking-experience" class="hover:text-orange-400 transition-colors">SPEAKING</a>
+        <a href="#footer" class="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded transition-colors">GET IN TOUCH</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="/images/hero.jpg" alt="Brent Cassity speaking" class="w-full h-full object-cover opacity-80">
+      <div class="absolute inset-0 bg-gradient-to-b from-[#3A1A5C]/60 via-[#3A1A5C]/40 to-[#3A1A5C]"></div>
+    </div>
+
+    <!-- Orange Circles Decoration -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-orange-500 rounded-full blur-3xl opacity-20 -translate-y-1/2 translate-x-1/3"></div>
+    <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-orange-400 rounded-full blur-2xl opacity-15"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 container mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
+        Breaking down the prisons<br>
+        <span class="text-white">in your own mind.</span>
+      </h1>
+      <a href="#meet-brent-cassity" class="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 transition-colors font-medium">
+        Brent's Story
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- As Seen In -->
+  <section class="py-16 border-y border-white/10">
+    <div class="container mx-auto px-6">
+      <p class="text-center text-sm text-white/60 mb-8 tracking-wider">AS SEEN IN</p>
+      <div class="flex items-center justify-center gap-12 flex-wrap opacity-70">
+        <img src="/images/media-logos/forbes.png" alt="Forbes" class="h-6 grayscale brightness-200">
+        <img src="/images/media-logos/wsj.png" alt="Wall Street Journal" class="h-6 grayscale brightness-200">
+        <img src="/images/media-logos/time.png" alt="TIME Magazine" class="h-8 grayscale brightness-200">
+        <img src="/images/media-logos/hbo.png" alt="HBO" class="h-8 grayscale brightness-200">
+        <img src="/images/media-logos/et.png" alt="Entertainment Tonight" class="h-6 grayscale brightness-200">
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Brent Section -->
+  <section id="meet-brent-cassity" class="py-24">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center">Meet Brent</h2>
+
+        <div class="prose prose-lg prose-invert max-w-none space-y-6 text-white/90 leading-relaxed">
+          <p>At 15 years old, Brent was visiting his dad at Marion prison. When he was leaving the visit, he told himself, "No matter what happens in my life, I will never end up in a place like this." Thirty-two years later, Brent found himself standing at the gates of Leavenworth to serve a five-year federal sentence. <em>What happened?</em></p>
+
+          <p>Brent became the CEO of the family's national company that was in the funeral, cemetery, and insurance business, Forever Enterprises. He along with his dad and brother were seen as innovators in their industry. Brent grew the funeral company from 3 states to operating over 20 states. The company was chronicled in the Wall Street Journal, TIME magazine, Entertainment Tonight to name a few. HBO even produced a documentary titled, "The Young and the Dead." Eventually, the company was brought down when Brent, his dad, and four others pled guilty to wire fraud, money laundering, and mail fraud. Brent had an additional charge of allowing an ex-felon to work in the business of insurance. Brent often speaks how risk and success can cause blind spots when growing a company.</p>
+
+          <p>Once Brent returned home from prison, he authored the Amazon Best Selling book <em>Nightmare Success: Loyalty, Betrayal, Life Behind Bars, Adapting, And Finally Breaking Free: A Memoir.</em> He is the host of the popular podcast <em>Nightmare Success In and Out.</em> He has coined the phrase "Nightmare Success" because everything you want is on the other side of the unknowns and your fears. Brent is an engaging storyteller that has a real-life transformational story. Everyone has built up prisons in their own mind. Brent loves speaking to audiences about the 5 tools he used to survive his nightmare. These tools are excellent to use for your life and business!</p>
+        </div>
+
+        <div class="mt-12">
+          <img src="/images/brent-bio.jpg" alt="Brent Cassity" class="rounded-lg shadow-2xl mx-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Podcast Section -->
+  <section id="hear-the-stories" class="py-24 bg-black/20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-4">
+        <p class="text-orange-400 text-sm font-medium tracking-wider mb-4">HEAR THE STORIES</p>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Nightmare Success:<br>The Podcast</h2>
+      </div>
+
+      <div class="max-w-3xl mx-auto">
+        <p class="text-lg text-white/90 leading-relaxed mb-8 text-center">
+          The Nightmare Success In and Out is a podcast about hope. What happens when your worst fear becomes your reality? How do you adapt, survive, and set yourself free? Host, Brent Cassity, was a CEO of a National Company. He received a five-year federal sentence to Leavenworth prison. He interviews justice impacted people who have made inspiring comebacks with their second chance in life. Listeners can take away nuggets of wisdom from each episode to knock down prisons they have built up in their own mind to take a step forward into their unknowns and fears to create their own Nightmare Success.
+        </p>
+
+        <p class="text-center mb-12">
+          Read more about the podcast and our interviews at <a href="https://nightmaresuccess.com" class="text-orange-400 hover:text-orange-300 font-medium" target="_blank" rel="noopener">NightmareSuccess.com</a>
+        </p>
+
+        <!-- Podcast Platforms -->
+        <div class="flex items-center justify-center gap-6 mb-16">
+          <a href="https://open.spotify.com/show/1B7Vox54D6B3Tb6UdaiqkR" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+            <img src="/images/platforms/spotify.png" alt="Listen on Spotify" class="h-12">
+          </a>
+          <a href="https://podcasts.apple.com/us/podcast/nightmare-success-in-and-out/id1588287560" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+            <img src="/images/platforms/apple-podcasts.png" alt="Listen on Apple Podcasts" class="h-12">
+          </a>
+        </div>
+
+        <!-- Featured Episodes -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-bold mb-8 text-center">FEATURED EPISODES</h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <a href="https://nightmaresuccess.com/p/sentenced-at-16-free-at-last-cheryl-armstrong-on-26-years-in-prison-planting-pur/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+              <img src="/images/podcast-episodes/ep-01.jpg" alt="Cheryl Armstrong Episode" class="rounded-lg">
+            </a>
+            <a href="https://nightmaresuccess.com/p/the-power-of-one-decision-from-prison-to-paychex-allyssa-bakers-comeback-story/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+              <img src="/images/podcast-episodes/ep-02.jpg" alt="Allyssa Baker Episode" class="rounded-lg">
+            </a>
+            <a href="https://nightmaresuccess.com/p/wired-on-wall-street-tom-hardin-tipper-x-on-wearing-a-wire-and-surviving-the-sting/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+              <img src="/images/podcast-episodes/ep-03.jpg" alt="Tom Hardin Episode" class="rounded-lg">
+            </a>
+            <a href="https://nightmaresuccess.com/p/from-film-sets-to-federal-charges-john-santilli-surviving-the-system/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+              <img src="/images/podcast-episodes/ep-04.jpg" alt="John Santilli Episode" class="rounded-lg">
+            </a>
+            <a href="https://nightmaresuccess.com/p/duke-got-life-boxer-charles-duke-tanners-journey-from-two-life-sentences-to-freedom/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+              <img src="/images/podcast-episodes/ep-05.jpg" alt="Duke Tanner Episode" class="rounded-lg">
+            </a>
+            <a href="https://nightmaresuccess.com/p/from-life-sentence-to-leader-yusef-wileys-100-turnaround/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+              <img src="/images/podcast-episodes/ep-06.jpg" alt="Yusef Wiley Episode" class="rounded-lg">
+            </a>
+            <a href="https://nightmaresuccess.com/p/from-prison-to-popcorn-emily-obriens-comeback-snacks-story/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+              <img src="/images/podcast-episodes/ep-07.jpg" alt="Emily O'Brien Episode" class="rounded-lg">
+            </a>
+            <a href="https://nightmaresuccess.com/p/zero-excuses-kristin-klines-convicted-comeback/" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+              <img src="/images/podcast-episodes/ep-08.jpg" alt="Kristin Kline Episode" class="rounded-lg">
+            </a>
+          </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="space-y-8 mt-16">
+          <blockquote class="border-l-4 border-orange-500 pl-6 italic text-white/80">
+            "The stories that Brent pursues and profiles on his podcast take the viewer/listener into worlds they've never been to before. These stories are nightmares in their own right but there's a twist. Success comes after the nightmare. True second chance/redemption stories. If you love true crime and people turning their lives around listen to this riveting podcast and its engaging host."
+            <footer class="mt-2 text-sm text-white/60 not-italic">— Diane Kaye, Apple Podcast Review</footer>
+          </blockquote>
+
+          <blockquote class="border-l-4 border-orange-500 pl-6 italic text-white/80">
+            "Humanizes the part of the criminal justice experience that most people do not pay attention to or at least initially think they would care about. They should and Brent's interviews show you why."
+            <footer class="mt-2 text-sm text-white/60 not-italic">— DLC5, Apple Podcast Review</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speaking Section -->
+  <section id="speaking-experience" class="py-24">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-4">
+        <p class="text-orange-400 text-sm font-medium tracking-wider mb-4">BOOK THE SPEAKING EXPERIENCE</p>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Surviving the Nightmare</h2>
+      </div>
+
+      <div class="max-w-3xl mx-auto text-center">
+        <p class="text-xl mb-8 text-white/90">
+          <strong>Allow Brent to share with your company, school, conference, and organization the incredible power of how-to breakdown prisons built up in your own mind to set yourself free.</strong>
+        </p>
+
+        <p class="text-lg mb-12 text-white/80">
+          Brent shares how risk and success can cause blind spots in your life and business.
+        </p>
+
+        <div class="flex items-center justify-center gap-6 mb-16">
+          <a href="https://www.youtube.com/watch?v=uDbgJ1vc_W8" target="_blank" rel="noopener" class="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded font-medium transition-colors">
+            View Reel
+          </a>
+          <a href="mailto:bdc@brentcassity.com" class="border border-orange-500 hover:bg-orange-500/10 px-8 py-3 rounded font-medium transition-colors">
+            Book Me
+          </a>
+        </div>
+
+        <!-- Testimonial -->
+        <div class="bg-white/5 rounded-lg p-8 border border-white/10">
+          <p class="text-white/80 leading-relaxed mb-6">
+            For over 30 years, I have been teaching full- and part-time, and I can say that I have had very few guest speakers whose insights and life lessons resonated so profoundly with my students. Brent's presentation was unlike any other I have heard.
+          </p>
+          <p class="text-white/80 leading-relaxed mb-6">
+            Brent spoke from the perspective of a successful businessperson who learned the lesson of taking ultimate responsibility. His presentation covered the elements of business leadership and emotional survival skills when your nightmare comes true. From his story, my students understood the level of reflection required when you face a point of decision.
+          </p>
+          <p class="text-white/80 leading-relaxed mb-6">
+            Brent's lecture was compelling, and my students told me how much his life lessons could mean for their future professional undertakings. I recommended Brent speak at other venues, particularly where younger professionals can learn about the consequences of their decisions and where more experienced can reflect on their life lessons.
+          </p>
+          <footer class="text-orange-400 font-medium">
+            Timothy P. Hedley, Ph.D., CPA, CFF, CFE<br>
+            <span class="text-white/60">Fordham University</span>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Section -->
+  <section id="read-the-book" class="py-24 bg-black/20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-4">
+        <p class="text-orange-400 text-sm font-medium tracking-wider mb-4">READ THE BOOK</p>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Nightmare Success:<br>A Memoir</h2>
+      </div>
+
+      <div class="max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img src="/images/book-cover.jpg" alt="Nightmare Success Book Cover" class="rounded-lg shadow-2xl">
+          </div>
+
+          <div class="space-y-6">
+            <p class="text-lg text-white/90 leading-relaxed">
+              As Brent Cassity stood at the gate of Leavenworth prison to voluntarily surrender his freedom for the next five years of his life, a million thoughts flooded through his mind. But, the one thought he couldn't push away is this: How did the thing I most feared, the one thing I told myself would never happen, happen to me?
+            </p>
+
+            <p class="text-lg text-white/90 leading-relaxed">
+              Nightmare Success is for the person who has lost hope, to show that a second chance is possible. Brent shares survival tools that helped him adapt to prison that can be used in everyday life for those who are stuck and fearful of continuing to step forward. There are business lessons shared about how to build a national company, and minefields to avoid.
+            </p>
+
+            <p class="text-lg text-white/90 leading-relaxed">
+              Brent coined the phrase, <strong>"Nightmare Success"</strong> because everything you want is on the other side of fear.
+            </p>
+
+            <p class="text-xl font-medium text-orange-400">
+              What key will unlock the prison of your mind and set you free?
+            </p>
+
+            <a href="https://amzn.to/3WC9gg3" target="_blank" rel="noopener" class="inline-block bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded font-medium transition-colors mt-4">
+              Buy a Copy Today
+            </a>
+          </div>
+        </div>
+
+        <!-- Book Reviews -->
+        <div class="mt-16">
+          <div class="text-center mb-12">
+            <p class="text-sm text-orange-400 font-medium tracking-wider mb-2">THOUSANDS SOLD</p>
+            <h3 class="text-3xl font-bold">Changing Lives.</h3>
+            <p class="text-xl text-white/80 mt-4">Brent's Story is an Unforgettable Account of Surviving and Thriving in the Face of Adversity.</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white/5 rounded-lg p-6 border border-white/10">
+              <p class="text-white/80 leading-relaxed mb-4">
+                "Nightmare Success: Loyalty, Betrayal, Life Behind Bars, Adapting, and Finally Breaking Free is an astonishing memoir by Brent Cassity. In this book, Cassity explores the darkness of prison life and the lessons he learned there. He paints vivid and gut-wrenching scenes to describe the pain and humiliation of being searched, the brutality of prison life, and the feeling of utter desolation. What helped Cassity was his positive attitude and his will to survive despite the seemingly insurmountable odds. He talks of coping strategies and how his loyalty to his fellow inmates and his sense of justice kept him going. After years of hard work and dedication, he earned his freedom and went on to start a successful small business. His journey to success serves as an inspiring example of how courage and determination can help one overcome their darkest nightmares and achieve their dreams. Nightmare Success is a thought-provoking read. Cassity's storytelling will leave readers with an unforgettable account of his struggle for survival in the face of adversity. Highly recommended for fans of memoirs and crime dramas alike."
+              </p>
+              <footer class="text-sm text-orange-400">— KMB, Verified Amazon Purchase</footer>
+            </div>
+
+            <div class="bg-white/5 rounded-lg p-6 border border-white/10">
+              <p class="text-white/80 leading-relaxed mb-4">
+                "As an Attorney, I see people get railroaded by the criminal justice system daily. This book is a great insight to just one of the millions people facing the government's power."
+              </p>
+              <footer class="text-sm text-orange-400">— AWim, Verified Amazon Purchase</footer>
+            </div>
+          </div>
+
+          <div class="text-center mt-8">
+            <a href="https://www.amazon.com/Nightmare-Success-Betrayal-Adapting-Breaking/dp/1951943961#customerReviews" target="_blank" rel="noopener" class="text-orange-400 hover:text-orange-300 font-medium">
+              More Reviews on Amazon →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="py-16 border-t border-white/10">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12">
+        <!-- Logo & Social -->
+        <div>
+          <img src="/images/logo.png" alt="Brent Cassity" class="h-12 mb-6">
+          <div class="flex items-center gap-4">
+            <a href="https://www.facebook.com/brentcassitynightmaresuccess/" target="_blank" rel="noopener" class="hover:opacity-70 transition-opacity">
+              <img src="/images/social/facebook.png" alt="Facebook" class="h-6">
+            </a>
+            <a href="https://www.youtube.com/channel/UCzpkqjjj53df9zlWAGba01g" target="_blank" rel="noopener" class="hover:opacity-70 transition-opacity">
+              <img src="/images/social/youtube.png" alt="YouTube" class="h-6">
+            </a>
+            <a href="https://www.linkedin.com/in/brent-cassity-8b66341a8/" target="_blank" rel="noopener" class="hover:opacity-70 transition-opacity">
+              <img src="/images/social/linkedin.png" alt="LinkedIn" class="h-6">
+            </a>
+          </div>
+        </div>
+
+        <!-- All Links -->
+        <div>
+          <h4 class="text-sm font-medium tracking-wider mb-4 text-orange-400">ALL LINKS</h4>
+          <ul class="space-y-2 text-sm text-white/80">
+            <li><a href="#meet-brent-cassity" class="hover:text-orange-400 transition-colors">About</a></li>
+            <li><a href="#hear-the-stories" class="hover:text-orange-400 transition-colors">Podcast</a></li>
+            <li><a href="#read-the-book" class="hover:text-orange-400 transition-colors">Book</a></li>
+            <li><a href="#speaking-experience" class="hover:text-orange-400 transition-colors">Speaking</a></li>
+            <li><a href="mailto:bdc@brentcassity.com" class="hover:text-orange-400 transition-colors">E-Mail Me</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div>
+          <h4 class="text-sm font-medium tracking-wider mb-4 text-orange-400">SOCIAL</h4>
+          <ul class="space-y-2 text-sm text-white/80">
+            <li><a href="https://www.youtube.com/channel/UCzpkqjjj53df9zlWAGba01g" target="_blank" rel="noopener" class="hover:text-orange-400 transition-colors">YouTube</a></li>
+            <li><a href="https://www.facebook.com/brentcassitynightmaresuccess/" target="_blank" rel="noopener" class="hover:text-orange-400 transition-colors">Facebook</a></li>
+            <li><a href="https://www.instagram.com/brentcassity/?hl=en" target="_blank" rel="noopener" class="hover:text-orange-400 transition-colors">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@brentcassity" target="_blank" rel="noopener" class="hover:text-orange-400 transition-colors">Tik Tok</a></li>
+            <li><a href="https://brentcassity.medium.com/" target="_blank" rel="noopener" class="hover:text-orange-400 transition-colors">Medium</a></li>
+            <li><a href="https://www.linkedin.com/in/brent-cassity-8b66341a8/" target="_blank" rel="noopener" class="hover:text-orange-400 transition-colors">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-white/10 text-center text-sm text-white/60">
+        <p>© 2025 All Rights Reserved</p>
+        <p class="mt-2">Website by <a href="https://discoverability.co/" target="_blank" rel="noopener" class="text-orange-400 hover:text-orange-300">The Discoverability Company</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
